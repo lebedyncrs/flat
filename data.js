@@ -20,9 +20,9 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -1.598869456865124,
-        "pitch": 0.13276995544562453,
-        "fov": 1.000890955726551
+        "yaw": -1.5215354565513763,
+        "pitch": 0.1527428103276698,
+        "fov": 0.9288571075708562
       },
       "linkHotspots": [
         {
@@ -58,7 +58,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -0.02887425804689947,
+          "pitch": 0.2956722637828193,
+          "rotation": 0,
+          "target": "0-living-room"
+        }
+      ],
       "infoHotspots": []
     }
   ],
