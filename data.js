@@ -24,14 +24,14 @@ var APP_DATA = {
       ],
       "faceSize": 1415,
       "initialViewParameters": {
-        "yaw": -2.824045831424826,
-        "pitch": 0,
+        "yaw": -2.529362418939611,
+        "pitch": 0.11879971838629366,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.6176553175133233,
-          "pitch": -0.006823707892246844,
+          "yaw": 0.6076093395530329,
+          "pitch": 0.06055795176012424,
           "rotation": 0,
           "target": "2-bedroom-corridor"
         }
@@ -39,8 +39,8 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "1-bedroom-corner",
-      "name": "bedroom-corner",
+      "id": "1-bathroom",
+      "name": "bathroom",
       "levels": [
         {
           "tileSize": 256,
@@ -62,11 +62,18 @@ var APP_DATA = {
       ],
       "faceSize": 1415,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.061746424219160545,
+        "pitch": 0.17682855023832644,
+        "fov": 1.7261186739995533
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 2.193534565395524,
+          "pitch": -0.06320562305858068,
+          "rotation": 0,
+          "target": "2-bedroom-corridor"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -93,66 +100,34 @@ var APP_DATA = {
       ],
       "faceSize": 1415,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": -2.052783369661844,
+        "pitch": -0.002650357683320337,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -2.939994755794892,
-          "pitch": 0.07745177478968657,
+          "yaw": -2.9499887852222066,
+          "pitch": 0.12677437956562976,
           "rotation": 0,
-          "target": "3-bathroom"
+          "target": "1-bathroom"
         },
         {
-          "yaw": -1.3028440138332602,
-          "pitch": -0.02836343524532481,
+          "yaw": -1.331124058545953,
+          "pitch": 0.1858759711824831,
+          "rotation": 6.283185307179586,
+          "target": "3-orridor"
+        },
+        {
+          "yaw": 1.5815429729180703,
+          "pitch": 0.1266320503574896,
           "rotation": 0,
-          "target": "4-orridor"
+          "target": "0-bedroom-center"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-bathroom",
-      "name": "bathroom",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1415,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.134601502713579,
-          "pitch": -0.2634757960380334,
-          "rotation": 0,
-          "target": "2-bedroom-corridor"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-orridor",
+      "id": "3-orridor",
       "name": "сorridor",
       "levels": [
         {
@@ -175,22 +150,22 @@ var APP_DATA = {
       ],
       "faceSize": 1415,
       "initialViewParameters": {
-        "yaw": 0.22046343548572978,
-        "pitch": 0.004147318416201529,
-        "fov": 1.9844389650541938
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.14924490380239597,
-          "pitch": 0.1845592862647596,
+          "yaw": 0.17431811110181883,
+          "pitch": 0.09792070267623032,
           "rotation": 0,
           "target": "2-bedroom-corridor"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": 2.825977625096913,
-          "pitch": 0.35772652065675814,
+          "yaw": 2.784602146793187,
+          "pitch": 0.18771337858164117,
           "title": "Exit",
           "text": "Exit"
         }
