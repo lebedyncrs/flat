@@ -1,7 +1,45 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-bathroom",
+      "id": "0-bedroom-center",
+      "name": "bedroom-center",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1415,
+      "initialViewParameters": {
+        "yaw": -2.914695039148585,
+        "pitch": 0,
+        "fov": 1.4576287790467233
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.6176553175133233,
+          "pitch": -0.006823707892246844,
+          "rotation": 0,
+          "target": "3-bedroom-corridor"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-bathroom",
       "name": "bathroom",
       "levels": [
         {
@@ -29,44 +67,6 @@ var APP_DATA = {
         "fov": 1.5707963267948966
       },
       "linkHotspots": [],
-      "infoHotspots": []
-    },
-    {
-      "id": "1-bedroom-center",
-      "name": "bedroom-center",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1415,
-      "initialViewParameters": {
-        "yaw": -3.0316024678905826,
-        "pitch": 0.0025710964541509895,
-        "fov": 1.3407371731192281
-      },
-      "linkHotspots": [
-        {
-          "yaw": 0.6176553175133233,
-          "pitch": -0.006823707892246844,
-          "rotation": 0,
-          "target": "3-bedroom-corridor"
-        }
-      ],
       "infoHotspots": []
     },
     {
@@ -133,7 +133,7 @@ var APP_DATA = {
           "yaw": -2.939994755794892,
           "pitch": 0.07745177478968657,
           "rotation": 0,
-          "target": "0-bathroom"
+          "target": "1-bathroom"
         },
         {
           "yaw": -1.3028440138332602,
