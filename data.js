@@ -22,81 +22,24 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1415,
       "initialViewParameters": {
-        "yaw": 0.21477253627498172,
-        "pitch": 0.25550386718283313,
+        "yaw": -2.9874366927199674,
+        "pitch": 0.10789648750917635,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 2.8695363062615904,
-          "pitch": 0.2196133694425697,
+          "yaw": -1.6734241731410098,
+          "pitch": 0.17423433066887384,
           "rotation": 0,
-          "target": "1-kitchen-living-room"
+          "target": "3-kitchen"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-kitchen-living-room",
-      "name": "kitchen-living-room",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 1.2720786578116137,
-        "pitch": 0.26179938779915446,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.4489196814958731,
-          "pitch": 0.0203808773069607,
-          "rotation": 0,
-          "target": "2-bathroom"
-        },
-        {
-          "yaw": -0.3374011242106594,
-          "pitch": 0.026041890880243557,
-          "rotation": 4.71238898038469,
-          "target": "3-toilet"
-        },
-        {
-          "yaw": -3.031558544615816,
-          "pitch": 0.19231020246892783,
-          "rotation": 0,
-          "target": "0-bedroom"
-        }
-      ],
-      "infoHotspots": [
-        {
-          "yaw": 0.2091452165332104,
-          "pitch": 0.048537025871500106,
-          "title": "Exit / Entrance",
-          "text": "<span style=\"font-size: 16px; background-color: rgba(103, 115, 131, 0.8);\">Exit / Entrance</span>"
-        }
-      ]
-    },
-    {
-      "id": "2-bathroom",
+      "id": "1-bathroom",
       "name": "bathroom",
       "levels": [
         {
@@ -117,25 +60,25 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1415,
       "initialViewParameters": {
-        "yaw": 2.553827632045599,
-        "pitch": 0.7312373625922977,
+        "yaw": -0.19752439547859169,
+        "pitch": 0.07803150904618938,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.16201079508189942,
-          "pitch": 0.24948626849420918,
+          "yaw": -1.224862395659244,
+          "pitch": 0.14806549922989198,
           "rotation": 0,
-          "target": "1-kitchen-living-room"
+          "target": "3-kitchen"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "3-toilet",
-      "name": "toilet",
+      "id": "2-entrance",
+      "name": "entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -155,28 +98,78 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1415,
       "initialViewParameters": {
-        "yaw": 2.435575696179539,
-        "pitch": 0.6557020043709709,
+        "yaw": 1.2951363765943267,
+        "pitch": 0.20708740019287575,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.07648815827551125,
-          "pitch": 0.5889243925176455,
+          "yaw": 1.1930690737905625,
+          "pitch": 0.0494360789232271,
+          "rotation": 10.995574287564278,
+          "target": "3-kitchen"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-kitchen",
+      "name": "kitchen",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1415,
+      "initialViewParameters": {
+        "yaw": 1.56083375940515,
+        "pitch": 0.05451914108667566,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 2.7138083245010263,
+          "pitch": -0.011828458020403332,
           "rotation": 0,
-          "target": "1-kitchen-living-room"
+          "target": "2-entrance"
+        },
+        {
+          "yaw": -0.037166102101897636,
+          "pitch": 0.05108734471749443,
+          "rotation": 0,
+          "target": "0-bedroom"
+        },
+        {
+          "yaw": -1.5391549853101267,
+          "pitch": 0.11091432918621535,
+          "rotation": 0,
+          "target": "1-bathroom"
         }
       ],
       "infoHotspots": []
     }
   ],
-  "name": "Project Title",
+  "name": "Apartment",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": true,
-    "fullscreenButton": false,
+    "fullscreenButton": true,
     "viewControlButtons": false
   }
 };
