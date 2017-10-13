@@ -204,6 +204,12 @@ var APP_DATA = {
           "pitch": 0.05721602026283534,
           "rotation": 0,
           "target": "1-bathroom-1"
+        },
+        {
+          "yaw": 0.10094000539662673,
+          "pitch": 0.08630821077656314,
+          "rotation": 0,
+          "target": "7-living-room"
         }
       ],
       "infoHotspots": []
@@ -284,6 +290,44 @@ var APP_DATA = {
         {
           "yaw": -1.649396428920042,
           "pitch": 0.00728873263630625,
+          "rotation": 0,
+          "target": "4-kitchen"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-living-room",
+      "name": "living-room",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1415,
+      "initialViewParameters": {
+        "yaw": -2.546250260666806,
+        "pitch": -0.02619948246812598,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.40366065177424026,
+          "pitch": 0.05848617734245032,
           "rotation": 0,
           "target": "4-kitchen"
         }
