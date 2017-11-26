@@ -106,11 +106,18 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": 2.9364940445695566,
+        "pitch": 0.04406058583721162,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 3.104644080729254,
+          "pitch": 0.0932487292594093,
+          "rotation": 0,
+          "target": "3-wyjscie-z-budynku"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -143,6 +150,12 @@ var APP_DATA = {
           "pitch": 0.16609233574823534,
           "rotation": 3.141592653589793,
           "target": "4-parter"
+        },
+        {
+          "yaw": 2.480788060188006,
+          "pitch": -0.19713856830496113,
+          "rotation": 0,
+          "target": "2-wejscie-do-budynku"
         }
       ],
       "infoHotspots": []
@@ -177,6 +190,12 @@ var APP_DATA = {
           "pitch": -0.3278817263355265,
           "rotation": 0.7853981633974483,
           "target": "6-klatka-schodowa-widok-przez-okno"
+        },
+        {
+          "yaw": 2.411853934943747,
+          "pitch": 0.0701825712095534,
+          "rotation": 0,
+          "target": "3-wyjscie-z-budynku"
         }
       ],
       "infoHotspots": []
@@ -377,6 +396,12 @@ var APP_DATA = {
           "pitch": 0.24536742980743576,
           "rotation": 4.71238898038469,
           "target": "0-kuchnia-miejsce-dla-z"
+        },
+        {
+          "yaw": 0.8767219832899222,
+          "pitch": 0.39279970522260044,
+          "rotation": 3.141592653589793,
+          "target": "11-korytarz-przy-dwiach"
         }
       ],
       "infoHotspots": []
