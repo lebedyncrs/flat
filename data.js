@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-kuchnia-miejsce-dla-z",
-      "name": "Kuchnia (miejsce dla z)",
+      "name": "Kuchnia",
       "levels": [
         {
           "tileSize": 256,
