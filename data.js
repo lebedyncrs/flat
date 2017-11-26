@@ -1,7 +1,59 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-pokj-1",
+      "id": "0-kuchnia-miejsce-dla-z",
+      "name": "Kuchnia (miejsce dla z)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": 0.025606801942984703,
+        "pitch": 0.2823188921995623,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.0050612325285186,
+          "pitch": 0.3863215379786755,
+          "rotation": 0,
+          "target": "13-kuchnia"
+        },
+        {
+          "yaw": 1.0843323085065908,
+          "pitch": -0.00693765618099107,
+          "rotation": 0,
+          "target": "12-pokj-2"
+        },
+        {
+          "yaw": -0.9278595187882974,
+          "pitch": 0.09370862529997304,
+          "rotation": 4.71238898038469,
+          "target": "1-pokj-1"
+        },
+        {
+          "yaw": -0.4386334669630152,
+          "pitch": 0.0970730279516534,
+          "rotation": 1.5707963267948966,
+          "target": "9-korytarz-rodek"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-pokj-1",
       "name": "Pokój 1",
       "levels": [
         {
@@ -16,31 +68,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -2.6964376435670196,
-        "pitch": 0.2723109683999585,
+        "yaw": -2.622758004401602,
+        "pitch": 0.1654157641002989,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.9602482822686085,
-          "pitch": 0.06556885144745195,
+          "yaw": -0.9520449483138531,
+          "pitch": 0.28604477559187025,
           "rotation": 0,
-          "target": "1-korytarz"
+          "target": "14-korytarz"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-korytarz",
-      "name": "Korytarz",
+      "id": "2-wejscie-do-budynku",
+      "name": "Wejscie do budynku",
       "levels": [
         {
           "tileSize": 256,
@@ -54,336 +102,201 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": -1.7009232231215101,
-        "pitch": 0.010965240690799405,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.1091844018521506,
-          "pitch": 0.25143902340855284,
-          "rotation": 0,
-          "target": "0-pokj-1"
-        },
-        {
-          "yaw": -0.4719349494185927,
-          "pitch": 0.18040390059235456,
-          "rotation": 0,
-          "target": "3-kuchnia"
-        },
-        {
-          "yaw": -2.156744819079954,
-          "pitch": 0.10489872115521237,
-          "rotation": 4.71238898038469,
-          "target": "7-korytarz-rodek"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "2-kuchnia",
-      "name": "Kuchnia",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": -3.0577012940139827,
-        "pitch": 0.10437216906687752,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.1142202812522868,
-          "pitch": 0.22672477885510744,
-          "rotation": 0,
-          "target": "3-kuchnia"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "3-kuchnia",
-      "name": "Kuchnia",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 0.1839959875162389,
-        "pitch": 0.008055365778435686,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.998538034035164,
-          "pitch": 0.23118693694896209,
-          "rotation": 0,
-          "target": "2-kuchnia"
-        },
-        {
-          "yaw": -0.5643703716641717,
-          "pitch": 0.10443568651223956,
-          "rotation": 1.5707963267948966,
-          "target": "1-korytarz"
-        },
-        {
-          "yaw": -0.9596632666918321,
-          "pitch": 0.10938289410993285,
-          "rotation": 4.71238898038469,
-          "target": "0-pokj-1"
-        },
-        {
-          "yaw": 1.066150110974304,
-          "pitch": 0.22744907736849562,
-          "rotation": 0,
-          "target": "4-pokj-2"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "4-pokj-2",
-      "name": "Pokój 2",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 0.6490004779035381,
-        "pitch": 0.26283982239737114,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -1.733732962811363,
-          "pitch": 0.2075614852008556,
-          "rotation": 0,
-          "target": "3-kuchnia"
-        },
-        {
-          "yaw": 2.2482643548027834,
-          "pitch": 0.1440286848554102,
-          "rotation": 0,
-          "target": "8-balkon"
-        },
-        {
-          "yaw": -0.8427627212451725,
-          "pitch": 0.08860660802353237,
-          "rotation": 0,
-          "target": "5-korytarz-przy-wyjsciu"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "5-korytarz-przy-wyjsciu",
-      "name": "Korytarz (przy wyjsciu)",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 1.2056674051744967,
-        "pitch": 0.05671701118576067,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.8133003666729124,
-          "pitch": 0.2716744219744083,
-          "rotation": 0,
-          "target": "6-azienka"
-        },
-        {
-          "yaw": 1.2729510975104503,
-          "pitch": 0.1474495947505332,
-          "rotation": 3.141592653589793,
-          "target": "7-korytarz-rodek"
-        },
-        {
-          "yaw": -2.014784435295228,
-          "pitch": 0.13455646783738828,
-          "rotation": 0,
-          "target": "11-klatka-schodowa"
-        },
-        {
-          "yaw": -0.45299254910115216,
-          "pitch": 0.2425233104696094,
-          "rotation": 0,
-          "target": "4-pokj-2"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "6-azienka",
-      "name": "Łazienka",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": -0.8664230126895411,
-        "pitch": 0.17172572591945645,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 1.7861418780906968,
-          "pitch": 0.2266680049550871,
-          "rotation": 0,
-          "target": "5-korytarz-przy-wyjsciu"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "7-korytarz-rodek",
-      "name": "korytarz środek",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "3-wyjscie-z-budynku",
+      "name": "Wyjscie z budynku",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": -0.5292963797927257,
+        "pitch": 0.06634705869630508,
+        "fov": 1.5707963267948966
+      },
       "linkHotspots": [
         {
-          "yaw": -2.4377643301897223,
-          "pitch": 0.23802350285986407,
-          "rotation": 0,
-          "target": "0-pokj-1"
-        },
-        {
-          "yaw": 3.0364224042451173,
-          "pitch": 0.17722071978806042,
-          "rotation": 4.71238898038469,
-          "target": "3-kuchnia"
-        },
-        {
-          "yaw": 0.482068181639157,
-          "pitch": 0.06728307017192137,
-          "rotation": 10.995574287564278,
-          "target": "6-azienka"
-        },
-        {
-          "yaw": 1.3356852488949436,
-          "pitch": 0.13781960695062168,
-          "rotation": 7.853981633974483,
-          "target": "4-pokj-2"
-        },
-        {
-          "yaw": 0.8385272576477778,
-          "pitch": 0.07862967210362726,
+          "yaw": -0.7840960802103751,
+          "pitch": 0.16609233574823534,
           "rotation": 3.141592653589793,
-          "target": "5-korytarz-przy-wyjsciu"
+          "target": "4-parter"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "4-parter",
+      "name": "Parter",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": 2.2374144921871526,
+        "pitch": 0.1417375023014973,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -0.5634008694716979,
+          "pitch": -0.3278817263355265,
+          "rotation": 0.7853981633974483,
+          "target": "6-klatka-schodowa-widok-przez-okno"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "5-klatka-schodowa-przy-dwiach",
+      "name": "Klatka schodowa (przy dżwiach)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": 2.6628191320462467,
+        "pitch": 0.06902913339762407,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": -1.9836522775867866,
+          "pitch": 0.445838690370401,
+          "rotation": 0,
+          "target": "6-klatka-schodowa-widok-przez-okno"
+        },
+        {
+          "yaw": -2.539309213958413,
+          "pitch": -0.3199497535321161,
+          "rotation": 1.5707963267948966,
+          "target": "7-klatka-schodowa-widok-przez-okno"
+        },
+        {
+          "yaw": 2.4618939017359764,
+          "pitch": 0.32535079190133764,
+          "rotation": 0,
+          "target": "11-korytarz-przy-dwiach"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "6-klatka-schodowa-widok-przez-okno",
+      "name": "Klatka schodowa (widok przez okno)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": -2.3377083621363344,
+        "pitch": 0.0531470521664108,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.18010639056128852,
+          "pitch": -0.26930533886891084,
+          "rotation": 1.5707963267948966,
+          "target": "5-klatka-schodowa-przy-dwiach"
+        },
+        {
+          "yaw": 0.703045633543768,
+          "pitch": 0.23217019826782526,
+          "rotation": 3.141592653589793,
+          "target": "4-parter"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "7-klatka-schodowa-widok-przez-okno",
+      "name": "Klatka schodowa (widok przez okno)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": -2.0432085404555362,
+        "pitch": 0.0926912632343111,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 0.9984744572103725,
+          "pitch": 0.5223695897046028,
+          "rotation": 0,
+          "target": "5-klatka-schodowa-przy-dwiach"
         }
       ],
       "infoHotspots": []
@@ -404,31 +317,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -1.2360490941862778,
-        "pitch": -0.1127751208980996,
+        "yaw": -1.3268651292291587,
+        "pitch": -0.004601942226504008,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.8038484883675459,
-          "pitch": 0.16027253161317745,
+          "yaw": 0.6853833941622867,
+          "pitch": 0.31649571022844647,
           "rotation": 0,
-          "target": "4-pokj-2"
+          "target": "12-pokj-2"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "9-klatka-schodowa-widok-przez-okno",
-      "name": "Klatka schodowa (widok przez okno)",
+      "id": "9-korytarz-rodek",
+      "name": "Korytarz (środek)",
       "levels": [
         {
           "tileSize": 256,
@@ -442,31 +351,39 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -2.000677698101155,
-        "pitch": -0.017073579654308446,
+        "yaw": -0.8167266848210168,
+        "pitch": 0.042057162149276905,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.9347587948623826,
-          "pitch": 0.51362143756797,
+          "yaw": 0.5329509656700893,
+          "pitch": 0.12110605403394104,
+          "rotation": 10.995574287564278,
+          "target": "10-azienka"
+        },
+        {
+          "yaw": -2.499597608361551,
+          "pitch": 0.20399694720229533,
           "rotation": 0,
-          "target": "11-klatka-schodowa"
+          "target": "1-pokj-1"
+        },
+        {
+          "yaw": 3.033990436090889,
+          "pitch": 0.24536742980743576,
+          "rotation": 4.71238898038469,
+          "target": "0-kuchnia-miejsce-dla-z"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "10-klatka-schodowa-widok-przez-okno",
-      "name": "Klatka schodowa (widok przez okno)",
+      "id": "10-azienka",
+      "name": "Łazienka",
       "levels": [
         {
           "tileSize": 256,
@@ -480,37 +397,79 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": -2.9654629396238015,
-        "pitch": 0.08224135828187329,
+        "yaw": -0.5349913731000484,
+        "pitch": 0.3699700502054384,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.4909058671720974,
-          "pitch": 0.2818634625860845,
-          "rotation": 3.9269908169872414,
-          "target": "12-parter"
+          "yaw": 1.8728503022948697,
+          "pitch": 0.1754041546993541,
+          "rotation": 0,
+          "target": "11-korytarz-przy-dwiach"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "11-korytarz-przy-dwiach",
+      "name": "Korytarz (przy dżwiach)",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
         },
         {
-          "yaw": 0.2024055324630396,
-          "pitch": -0.22503417756213118,
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        }
+      ],
+      "faceSize": 1024,
+      "initialViewParameters": {
+        "yaw": -3.0707674963674485,
+        "pitch": -0.02929155367527514,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [
+        {
+          "yaw": 1.3598844809827089,
+          "pitch": 0.3315392387395768,
           "rotation": 1.5707963267948966,
-          "target": "11-klatka-schodowa"
+          "target": "9-korytarz-rodek"
+        },
+        {
+          "yaw": -0.3574412630443433,
+          "pitch": 0.26427857539295374,
+          "rotation": 4.71238898038469,
+          "target": "12-pokj-2"
+        },
+        {
+          "yaw": -2.0735587381839498,
+          "pitch": 0.2829981092416105,
+          "rotation": 0,
+          "target": "5-klatka-schodowa-przy-dwiach"
+        },
+        {
+          "yaw": 2.742744453122823,
+          "pitch": 0.23614643452965645,
+          "rotation": 0,
+          "target": "10-azienka"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "11-klatka-schodowa",
-      "name": "Klatka schodowa",
+      "id": "12-pokj-2",
+      "name": "Pokój 2",
       "levels": [
         {
           "tileSize": 256,
@@ -524,43 +483,39 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": 2.699507402329326,
-        "pitch": 0.12914570296394423,
+        "yaw": 0.6733876755466,
+        "pitch": 0.27139053801206003,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 2.5104204332096733,
-          "pitch": 0.2730461291724744,
+          "yaw": -1.7446469491319583,
+          "pitch": 0.28543760430316745,
           "rotation": 0,
-          "target": "5-korytarz-przy-wyjsciu"
+          "target": "0-kuchnia-miejsce-dla-z"
         },
         {
-          "yaw": -2.0159865480583115,
-          "pitch": 0.4006612434414585,
+          "yaw": 2.4429523994802285,
+          "pitch": 0.05104656567027632,
           "rotation": 0,
-          "target": "10-klatka-schodowa-widok-przez-okno"
+          "target": "8-balkon"
         },
         {
-          "yaw": -2.5386741314084293,
-          "pitch": -0.11127816040427341,
-          "rotation": 7.0685834705770345,
-          "target": "9-klatka-schodowa-widok-przez-okno"
+          "yaw": -0.6260363255848773,
+          "pitch": 0.2885671248232171,
+          "rotation": 0,
+          "target": "10-azienka"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "12-parter",
-      "name": "Parter",
+      "id": "13-kuchnia",
+      "name": "Kuchnia",
       "levels": [
         {
           "tileSize": 256,
@@ -574,31 +529,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": 3.0516094381985486,
+        "pitch": 0.08823566807467031,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": -0.6529724854227972,
-          "pitch": -0.3093604872182212,
-          "rotation": 7.0685834705770345,
-          "target": "11-klatka-schodowa"
+          "yaw": -0.9334686120815263,
+          "pitch": 0.18294175945480973,
+          "rotation": 0,
+          "target": "0-kuchnia-miejsce-dla-z"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "13-wyjcie-z-budynku",
-      "name": "Wyjście z budynku",
+      "id": "14-korytarz",
+      "name": "Korytarz",
       "levels": [
         {
           "tileSize": 256,
@@ -612,112 +563,32 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1368,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
+        "yaw": -1.5348492283355668,
+        "pitch": 0.07481960630863327,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 2.4896898627705255,
-          "pitch": 0.1735041348512798,
+          "yaw": 1.0879130789226608,
+          "pitch": 0.28331087959947965,
           "rotation": 0,
-          "target": "14-wejcie-do-budynku"
+          "target": "1-pokj-1"
         },
         {
-          "yaw": -0.8300664130195337,
-          "pitch": 0.2449344258037307,
+          "yaw": -0.33706631485049066,
+          "pitch": 0.32950069543035454,
           "rotation": 0,
-          "target": "12-parter"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "14-wejcie-do-budynku",
-      "name": "Wejście do budynku",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
+          "target": "0-kuchnia-miejsce-dla-z"
         },
         {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 2.90743081162287,
-        "pitch": 0.05041099874246591,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 3.0202175408017453,
-          "pitch": 0.16120262069448899,
-          "rotation": 0,
-          "target": "13-wyjcie-z-budynku"
-        },
-        {
-          "yaw": 1.2671365820225446,
-          "pitch": 0.10706951038513779,
-          "rotation": 0,
-          "target": "15-osiedle"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "15-osiedle",
-      "name": "Osiedle",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        }
-      ],
-      "faceSize": 1368,
-      "initialViewParameters": {
-        "yaw": 2.8316763634584845,
-        "pitch": -0.09007363552250602,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": 2.9422400405578646,
-          "pitch": 0.13105486760634122,
-          "rotation": 0,
-          "target": "14-wejcie-do-budynku"
+          "yaw": -2.171343290664346,
+          "pitch": 0.15663201860201426,
+          "rotation": 4.71238898038469,
+          "target": "9-korytarz-rodek"
         }
       ],
       "infoHotspots": []
