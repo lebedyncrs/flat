@@ -1,10 +1,25 @@
+/*
+ * Copyright 2016 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 'use strict';
 
 (function() {
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
   var screenfull = window.screenfull;
-  var APP_DATA = window.APP_DATA;
+  var data = window.APP_DATA;
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
@@ -48,24 +63,19 @@
   // Viewer options.
   var viewerOpts = {
     controls: {
-      mouseViewMode: APP_DATA.settings.mouseViewMode
+      mouseViewMode: data.settings.mouseViewMode
     }
   };
 
   // Initialize viewer.
   var viewer = new Marzipano.Viewer(panoElement, viewerOpts);
 
-  // Setup autorotate.
-  var autorotate = Marzipano.autorotate({ yawSpeed: 0.1, targetPitch: 0, targetFov: Math.PI/2 });
-  if (APP_DATA.settings.autorotateEnabled) {
-    autorotateToggleElement.classList.add('enabled');
-  }
-
   // Create scenes.
-  var scenes = APP_DATA.scenes.map(function(data) {
+  var scenes = data.scenes.map(function(data) {
+    var urlPrefix = "tiles";
     var source = Marzipano.ImageUrlSource.fromString(
-      "tiles/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
-      { cubeMapPreviewUrl: "tiles/" + data.id + "/preview.jpg" });
+      urlPrefix + "/" + data.id + "/{z}/{f}/{y}/{x}.jpg",
+      { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
     var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
@@ -97,14 +107,21 @@
     };
   });
 
-  // Display the initial scene.
-  switchScene(scenes[0]);
+  // Set up autorotate, if enabled.
+  var autorotate = Marzipano.autorotate({
+    yawSpeed: 0.03,
+    targetPitch: 0,
+    targetFov: Math.PI/2
+  });
+  if (data.settings.autorotateEnabled) {
+    autorotateToggleElement.classList.add('enabled');
+  }
 
   // Set handler for autorotate toggle.
   autorotateToggleElement.addEventListener('click', toggleAutorotate);
 
-  // Check if fullscreen is supported and enable it if so
-  if (screenfull.enabled && APP_DATA.settings.fullscreenButton) {
+  // Set up fullscreen mode, if supported.
+  if (screenfull.enabled && data.settings.fullscreenButton) {
     document.body.classList.add('fullscreen-enabled');
     fullscreenToggleElement.addEventListener('click', toggleFullscreen);
   } else {
@@ -361,12 +378,15 @@
   }
 
   function findSceneDataById(id) {
-    for (var i = 0; i < APP_DATA.scenes.length; i++) {
-      if (APP_DATA.scenes[i].id === id) {
-        return APP_DATA.scenes[i];
+    for (var i = 0; i < data.scenes.length; i++) {
+      if (data.scenes[i].id === id) {
+        return data.scenes[i];
       }
     }
     return null;
   }
+
+  // Display the initial scene.
+  switchScene(scenes[0]);
 
 })();
